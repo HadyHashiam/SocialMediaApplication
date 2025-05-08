@@ -18,7 +18,7 @@ A dynamic full-stack social media app where users can connect, post, chat in rea
 <div align="center">
   <img src="./images/welcome.PNG" alt="Welcome Page" width="30%" style="margin: 10px"/>
   <img src="./images/profile.PNG" alt="Profile Page" width="30%" style="margin: 10px"/>
-  <img src="./images/post.PNG" alt="Post UI" width="30%" style="margin: 10px"/>
+  <img src="./images/Post.PNG" alt="Post UI" width="30%" style="margin: 10px"/>
 <!--   <img src="./images/welcome.PNG" alt="Post UI" width="30%" style="margin: 10px"/>
   <img src="./images/profile.PNG" alt="Friend Requests" width="30%" style="margin: 10px"/>
   <img src="./images/post.PNG" alt="Profile Cover" width="30%" style="margin: 10px"/> -->
