@@ -1,0 +1,65 @@
+### GetAll Users
+GET http://localhost:3000/users
+### GetAll Users
+GET http://localhost:3000/admin/users
+
+
+
+### GetFriends of user
+GET http://localhost:3000/friend/user/67ef557b3529d1e2e42110f3
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDYxMDg5MTIsImV4cCI6MTc1Mzg4NDkxMn0.bQ3BDSvyVAFRSaPKdaEdKqZtLZFFBEQ9eufOtFn3rMc
+
+
+
+
+### apply features for email 
+GET http://localhost:3000/users?keyword=hadyhashim17  
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+### apply features   exactly search keyword 
+GET http://localhost:3000/users?email=hadyhashim17@gmail.com
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+
+
+
+### GetOne  user
+GET http://localhost:3000/users/67ef55863529d1e2e42110f7
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+
+
+### UpdateOne
+PATCH  http://localhost:3000/product/678c698ad165d3c26dd20ba7
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+{ 
+  "name": "Iphone 13 Pro max "
+}
+
+
+
+
+### DeleteONE 
+DELETE  http://localhost:3000/product/678c69afd165d3c26dd20bb0
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+
+
+
+### to change phpto 
+POST   http://localhost:3000/users/profilePicture
+Content-Type: application/json
+
+
+{ 
+  "name": "Iphone 13 Pro max "
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Chat App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <style>
+        /* تعديل شكل الدائرة */
+        .online-status {
+            display: inline-block;
+            width: 12px; /* حجم النقطة */
+            height: 12px; /* حجم النقطة */
+            background-color: gray; /* اللون الافتراضي إذا كان غير متصل */
+            border-radius: 50%;
+            margin-left: 10px; /* المسافة بين الاسم والنقطة */
+            vertical-align: middle; /* لضبط المحاذاة عموديًا */
+        }
+
+        .online {
+            background-color: green; /* اللون الأخضر إذا كان متصلاً */
+        }
+
+        .offline {
+            background-color: gray; /* اللون الرمادي إذا كان غير متصل */
+        }
+
+        /* تنسيق البيانات الخاصة بالمستخدم */
+        .user-data {
+            display: flex;
+            align-items: center; /* محاذاة الصورة مع الاسم */
+            justify-content: flex-start; /* محاذاة الصورة والاسم مع بعضهم */
+        }
+
+        /* تنسيق صورة المستخدم */
+        .user-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px; /* المسافة بين الصورة والاسم */
+        }
+
+        /* تنسيق الاسم وعلامة الأون لاين */
+        h3 {
+            display: flex;
+            align-items: center; /* محاذاة الاسم مع النقطة */
+            margin: 0; /* إزالة المسافات الزائدة */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="/home/search" class="text-center">
+        <input type="text" name="name" class="form-control" placeholder="Enter name">
+        <input type="submit" value="Search" class="btn btn-primary">
+    </form> <br>
+        <div>
+                <p class="alert alert-danger">No Users found</p>
+                <div>
+                        <div class="col col-12 col-md-6 col-lg-4 bg-primary" style="padding-top: 15px; padding-bottom: 15px">
+                            <div class="user-data">
+                                <!-- صورة المستخدم -->
+                                <img class="user-image" src="/images/elsaidjpg.jpg">
+                                <h3>
+                                    <a href="/profile/ user._id "> elsaid </a>
+                                    <!-- علامة الأون لاين -->
+                                    <span class="online-status user.isOnline ? 'online' : 'offline' "></span>
+                                </h3>
+                            </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- <script src="/socket.io/socket.io.js"></script> -->
+<!-- <script src="/js/sockets/init.js"></script> -->
+
+</body>
+</html>

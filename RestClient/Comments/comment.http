@@ -1,0 +1,49 @@
+### GetAll 
+GET http://localhost:3000/comment
+
+
+### GetAll  comments of specific post
+GET http://localhost:3000/comment/post/67f9297d6cd626a266e3f801
+Content-Type: application/json
+
+
+
+
+# shika
+### User send message
+POST  http://localhost:3000/comment/6813b99b32c7a6d07f6b03bf
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDYxNTMzMzAsImV4cCI6MTc1MzkyOTMzMH0.3U6WIc7qZqZbyuiNw681uO_-rT_xsxApS0VNbTxHFBY
+
+{
+  "text": "اذهب للجحيم"
+
+}
+
+
+
+# shika
+### User Create Comment on specific post
+POST  http://localhost:3000/comment
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU4NjM1MjlkMWUyZTQyMTEwZjciLCJpYXQiOjE3NDYxNTM1NzMsImV4cCI6MTc1MzkyOTU3M30.DGPW7_vvbVIn4UNahPrm1csVYZ-5yE3S0adfuQLypBE
+
+{
+  "postId": "67f9297d6cd626a266e3f801",
+  "content": "the king is Known well "
+
+}
+
+
+
+# shika
+### User Create Comment on specific post
+POST  http://localhost:3000/comment/post/reply
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDYxODc2MTAsImV4cCI6MTc1Mzk2MzYxMH0.6jiLw2UiGkSrZcUXKpRbAIoYdlJQQLkXWewcxeuXlP4
+
+{
+  "commentId": "68143030f51b995fe0affa82",
+  "content": "bs yala"
+
+}

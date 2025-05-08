@@ -1,0 +1,55 @@
+### GetAll friends for specific user
+GET http://localhost:3000/friend/user/67ef557b3529d1e2e42110f3
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YwNTQ0NDNmNTgyY2E0MzFjYjRmNzkiLCJpYXQiOjE3NDQ0MDE1NTQsImV4cCI6MTc1MjE3NzU1NH0.kGPfrWNv8bIgwtvV3G_ytbVmfGdlOiSLdlh0XHqbJGk
+### GetAll friendRequest for specific user
+GET http://localhost:3000/friend/friendRequests/67ef557b3529d1e2e42110f3
+
+### GetAll sentrequest for specific user
+GET http://localhost:3000/friend/sentRequests/67ef557b3529d1e2e42110f3
+
+
+
+### sent Friend-Request for specific user                  ( Sent FRIEND REQUEST )
+POST  http://localhost:3000/friend/sentrequest
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YwNTQ0NDNmNTgyY2E0MzFjYjRmNzkiLCJpYXQiOjE3NDQ0MDE1NTQsImV4cCI6MTc1MjE3NzU1NH0.kGPfrWNv8bIgwtvV3G_ytbVmfGdlOiSLdlh0XHqbJGk
+
+{
+  "ParamUserId": "67ef557b3529d1e2e42110f3"
+}
+
+
+### Accept Friend-Request for specific user                  ( Accept FRIEND REQUEST )
+POST  http://localhost:3000/friend/accept
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YwNTQ0NDNmNTgyY2E0MzFjYjRmNzkiLCJpYXQiOjE3NDQzOTg5MTMsImV4cCI6MTc1MjE3NDkxM30.siaYsUDBOunkak_Y6RzayXWOhQrMNc8J0X4tyFj6doA
+
+{
+  "ParamUserId": "67ef557b3529d1e2e42110f3"
+}
+
+
+
+
+
+
+### Reject Friend-Request for specific user                  ( Accept FRIEND REQUEST )
+POST  http://localhost:3000/friend/reject
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU4MjM1MjlkMWUyZTQyMTEwZjUiLCJpYXQiOjE3NDM4MTAzNjgsImV4cCI6MTc1MTU4NjM2OH0.rsj_xwMCRMwRG8bir3Ggakm59fM0ZQGTAQfwsEC4xs4
+
+{
+  "requestId": "67ef557b3529d1e2e42110f3"
+}
+
+
+
+
+### delete Friend for specific user                  ( Accept FRIEND REQUEST )
+POST  http://localhost:3000/friend/delete
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDM4MTExOTcsImV4cCI6MTc1MTU4NzE5N30.NChrolQLzfqTx-tR35lU8aMTSmXikwV03yg_DDX1dzM
+
+{
+  "friendId": "67f054443f582ca431cb4f79"
+}

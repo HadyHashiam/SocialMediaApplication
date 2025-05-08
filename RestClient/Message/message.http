@@ -1,0 +1,36 @@
+### GetAll 
+GET http://localhost:3000/Message
+
+
+### GetAll 
+GET http://localhost:3000/Message/6813b99b32c7a6d07f6b03bf
+Content-Type: application/json
+
+
+
+
+# shika
+### User send message
+POST  http://localhost:3000/message/6813b99b32c7a6d07f6b03bf
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDYxMjg3MTYsImV4cCI6MTc1MzkwNDcxNn0.VLR7GCM-BeWmRkJrvTV5vQ6smFpgu8Kd28Hpr1itUPI
+
+{
+  "text": "اذهب للجحيم"
+
+}
+
+
+
+# zizp
+### User Create post 
+POST  http://localhost:3000/Message
+Content-Type: application/json
+
+
+{
+  "chat": "6813b99b32c7a6d07f6b03bf",
+  "sender": "67ef55863529d1e2e42110f7",
+  "text": "ليه كدة ياعم شيكا دا انا بحبك"
+
+}

@@ -1,0 +1,33 @@
+### GetAll 
+GET http://localhost:3000/chat
+
+
+
+### Get all chats for specific user
+GET http://localhost:3000/chat/67ef557b3529d1e2e42110f3
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+// GetAll With Express.js
+### Get REQUEST
+GET http://localhost:3000/product/express
+name: hady
+age:24
+
+// Create With Express.js
+### GET REQUEST
+POST  http://localhost:3000/product/express
+Content-Type: application/json
+Authorization:  Bearer 
+
+{
+  "title": "Product88",
+  "price": "80880"
+}

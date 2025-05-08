@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <link rel="stylesheet" href="/css/chat.css">
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+      
+        <input id="currentUserId" type="hidden" name="currentUserId" value="<%= currentUserId%>">
+        <input id="CurrentUserImage" type="hidden" name="CurrentUserImage" value="<%= CurrentUserImage%>">
+        <input id="CurrentUserName" type="hidden" name="CurrentUserName" value="<%= CurrentUserName%>">
+        <input id="chatId" type="hidden" name="chatId" value="<%= chatId%>">
+
+        <input id="FriendUserName" type="hidden" name="FriendUserName" value="<%= FriendUserName%>">
+        <input id="FriendUserImage" type="hidden" name="FriendUserImage" value="<%= FriendUserImage%>">
+        <input id="FriendUserId" type="hidden" name="FriendUserId" value="<%= FriendUserId%>">
+
+        <%- include('parts/nav')%>
+
+    <!-------------------------------- MAIN ----------------------------------->
+<main class="chat-container container">
+
+    <div class="chat-sidebar">
+      <div class="chat-search" >
+        <input type="text" placeholder="Search messages...">
+      </div>
+      <ul class="chat-list">
+        <li class="chat-item active">
+          <img src="" alt="profile">
+          <div class="chat-info">
+            <h4> </h4>
+            <p></p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  <div class="chat-content">
+    <div class="chat-header">
+      <img src="./images/profile-1.jpg" alt="User">
+      <h4> </h4>
+    </div>
+    <div class="chat-messages">
+    
+      <!-- رسائل تانية -->
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="اكتب رسالة...">
+      <button class="btn btn-primary">إرسال</button>
+    </div>
+  </div>
+
+</main>
+
+                    <script src="/socket.io/socket.io.js"></script>
+                    <script src="/js/sockets/init.js"></script>
+                    <script src="/js/sockets/chat.js"></script>                    
+                    <script src="/js/ForFront/home.js"></script>
+                                        <script src="/js/ForFront/profile.js"></script> 
+
+                    <script src="/js/ForFront/chat.js"></script>
+
+</body>
+</html>

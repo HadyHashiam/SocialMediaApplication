@@ -1,0 +1,34 @@
+  <nav>
+    <div class="container">
+      <a href="/home">
+        <h2 class="logo">mySocial</h2>
+      </a>
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Search for creators, inspirations, and projects" />
+      </div>
+      <div class="create">
+        <label class="btn btn-primary" for="create-post">Create</label>
+        <div class="profile-photo">
+          <a href="/profile"><img id="navbarUserImage"  alt="Profile Photo" /></a>
+        </div>
+      </div>
+            <div class="friend-requests-dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="friendRequestsDropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Friend Requests
+        </button>
+
+        <div class="dropdown-content" id="friendRequestsList">
+            <!-- friend Requests will shown dynamically here  -->
+        </div>
+
+
+       
+
+      </div>
+      <form action="logout" method="GET" class="ml-md-3">
+        <button type="submit" class="btn btn-danger">Logout</button>
+      </form>
+    </div>
+  </nav>

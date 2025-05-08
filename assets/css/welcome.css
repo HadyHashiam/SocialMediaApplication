@@ -1,0 +1,300 @@
+/* Navbar */
+nav {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+  
+  nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+  
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+  
+  nav a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+  nav a::before,
+  nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+  
+  nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+  
+nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+  
+nav a:hover:before,
+  nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+  
+nav a:hover {
+    color: #3DA35D;
+}
+#line{
+    border-right: 20px;
+    background-color: black;
+    height:55px;
+    width: 2px;
+    position: relative;
+    right: 10px;
+}
+.nav-submit-btn{
+    border-radius: 15px;
+}
+.nav-submit-btn:hover{
+    background-color: rgb(128, 0, 0);
+}
+/* Navbar */
+
+body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/back2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+  
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  
+  
+  
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+  
+  .content .logo {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  
+  .content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  footer {
+    padding: 2.2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Small Screens */
+  @media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+      
+    }
+
+    .showcase{
+      position: relative;
+      top: 50px;
+      
+    }
+  
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .content .text {
+      display: none;
+    }
+  
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+  }
+  
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+  
+    .content {
+      top: 0;
+    }
+  }
+  
+
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  button, button:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background-image: url("https://assets.codepen.io/3305358/hazard-stripes-wallpaper.jpg");
+    background-size: 150%;
+    background-position: left;
+    transition: 1s;
+  }
+  
+  button:before {
+    width: 150px;
+    height: 50px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 25px;
+    position: absolute;
+    transition: 500ms;
+  }
+  
+  button:hover:before {
+    background: rgba(0,0,0,0);
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  button:hover {
+    background-position: center;
+    box-shadow: 0px 0px 10px rgba(232, 218, 26, 0.5);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  .get-started-btn{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 180px;
+  }
+
+  /* responsive for mobile phones */
+@media only screen and (max-width: 768px) {
+  
+  .get-started-btn{
+    position: relative;
+    bottom: 150px;
+  }
+}

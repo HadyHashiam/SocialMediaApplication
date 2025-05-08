@@ -1,0 +1,68 @@
+### GetAll Users
+GET http://localhost:3000/admin/users
+
+
+
+
+### apply features for email 
+GET http://localhost:3000/admin/users?keyword=hadyhashim17  
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+### apply features   exactly search keyword 
+GET http://localhost:3000/admin/users?email=hadyhashim17@gmail.com
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+
+
+
+### update  user
+PUT http://localhost:3000/admin/user/67f054443f582ca431cb4f79
+Content-Type: application/json
+
+{
+    "friends": [
+    {
+      "name": "Shika",
+      "image": "default-user-image.png",
+      "id": "67ef557b3529d1e2e42110f3"
+      
+    },
+    {
+      "name": "ZIZO",
+      "image": "zizo.png",
+      "id": "67ef55863529d1e2e42110f7"
+      
+    },
+    {
+      "name": "Hady",
+      "image": "elsaidjpg.jpg",
+      "id": "67ef55823529d1e2e42110f5"
+      }
+  ]
+
+}
+
+
+
+
+### UpdateOne
+PATCH  http://localhost:3000/admin/user/678c698ad165d3c26dd20ba7
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+{ 
+  "name": "Iphone 13 Pro max "
+}
+
+
+
+
+### DeleteONE 
+DELETE  http://localhost:3000/admin/user/678c69afd165d3c26dd20bb0
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+
+

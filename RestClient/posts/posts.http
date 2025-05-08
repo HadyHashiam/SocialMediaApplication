@@ -1,0 +1,99 @@
+### GetAll 
+GET http://localhost:3000/posts
+
+
+
+### apply fetures
+GET http://localhost:3000/posts?authorname=ZIZO
+
+### apply fetures
+GET http://localhost:3000/posts?keyword=Zamalek 
+
+
+
+
+
+
+### User Create post 
+POST  http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "content": "Iam the new kingtwo ",
+  "image": "elsaidjpg.jpg"
+
+}
+
+
+
+
+### User like specific post 
+POST  http://localhost:3000/posts/like
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDYxOTYyODEsImV4cCI6MTc1Mzk3MjI4MX0.JiJckQcu5m3IU0iCn3vp70dMN95o_NZrHM-dUijZLKs
+
+{
+  "postId": "6814d7aec449913caf66f337"
+}
+
+
+
+
+### UpdateOne
+PATCH  http://localhost:3000/posts/678c698ad165d3c26dd20ba7
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhjNjYyYjQ2YzQzNDRiMjUwMWFjZWIiLCJpYXQiOjE3MzcyNTUyODgsImV4cCI6MTc0NTAzMTI4OH0.PsuoMR8CYxXs-Fcuo0HAVjayIdprVdbYAL4w2-n98S0
+
+{ 
+  "name": "Iphone 13 Pro max "
+}
+
+
+
+
+### User Delete Post
+DELETE  http://localhost:3000/posts/delete
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDM4MTY0NDYsImV4cCI6MTc1MTU5MjQ0Nn0.AY4Jj5OgnQSOtcSdlF-T6yJwmrmr_brfnXhroKbaUec
+
+{
+  "postId": "67f086e8736542e5abe72531"
+}
+
+
+
+
+### get time line posts
+GET http://localhost:3000/posts/timeline 
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDM4MTU0MDIsImV4cCI6MTc1MTU5MTQwMn0.S6zEG5mioBiX0okUkuzn8mszKva3WP4vWvvbWnNmXt0
+
+
+### Get all posts for specific user
+GET http://localhost:3000/users/67ef557b3529d1e2e42110f3/posts
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VmNTU3YjM1MjlkMWUyZTQyMTEwZjMiLCJpYXQiOjE3NDM4MTU0MDIsImV4cCI6MTc1MTU5MTQwMn0.S6zEG5mioBiX0okUkuzn8mszKva3WP4vWvvbWnNmXt0
+
+
+
+
+
+
+
+
+
+// GetAll With Express.js
+### Get REQUEST
+GET http://localhost:3000/users/getMe/
+
+
+// Create With Express.js
+### GET REQUEST
+POST  http://localhost:3000/product/express
+Content-Type: application/json
+Authorization:  Bearer 
+
+{
+  "title": "Product88",
+  "price": "80880"
+}
